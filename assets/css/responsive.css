@@ -1,0 +1,499 @@
+/***********************************************/
+/* Below 1344px viewport width (Small desktop) */
+/***********************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+
+  /* 
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    } */
+}
+
+/**************************************************/
+/* Below 1200px viewport width (Landscape tablet) */
+/**************************************************/
+
+@media (max-width: 75em) {
+  html {
+    /* font-size: 9px;
+      1rem = 9px / 16 */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  /* .header {
+    padding: 0 3.2rem;
+  } */
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .testimonials {
+    gap: 4.8rem;
+  }
+}
+
+/***************************************/
+/* Below 1008px viewport width (Tablet) */
+/***************************************/
+
+@media (max-width: 63em) {
+  html {
+    /* font-size: 8px;
+        1rem = 8px / 16 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .deliverd-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    padding: 4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 5rem;
+  }
+
+  /* .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  } */
+
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+
+  /* .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(251, 245, 208, 0.95);
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;*/
+  /* Hide navigation */
+  /*display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    /* display: flex; */
+  /*transform: translateX(0);
+  }
+
+  .main-nav-list {
+    gap: 4.8rem;
+    flex-direction: column;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #45260a;
+  } */
+
+  .header {
+    height: 9.6rem;
+  }
+
+  .main-nav-link-img {
+    height: 4.8rem;
+  }
+
+  .main-nav-link.logo.main-logo .main-nav-link-img {
+    height: 7.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .product .image-container {
+    max-width: 30%;
+    height: auto;
+  }
+
+  .product .image-container img {
+    max-height: 70%;
+  }
+}
+
+/************************************************/
+/* Below 720px viewport width (Smaller Tablets) */
+/************************************************/
+
+@media (max-width: 45em) {
+  section:first-child {
+    margin-top: 3rem;
+  }
+
+  .header {
+    height: 7.2rem;
+  }
+
+  .main-nav-link-img {
+    height: 3.2rem;
+  }
+
+  .main-nav-link.logo.main-logo .main-nav-link-img {
+    height: 4.8rem;
+  }
+
+  .section-hero > .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .diet-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .address-col {
+    grid-column: span 1;
+    grid-row: 1;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 3;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+}
+
+/************************************************/
+/*     Below 560px viewport width (Phones )     */
+/************************************************/
+
+@media (max-width: 35em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem;
+  }
+
+  .header {
+    height: 6.4rem;
+  }
+
+  .main-nav-link.logo.main-logo {
+    transform: translateY(2.4rem);
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .container.grid:not(.hero) {
+    padding: 5rem;
+  }
+
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    margin: 0;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "fname"
+      "email"
+      "hear"
+      "feedback"
+      "submit";
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .list {
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .pricing-plan--complete::after {
+    /* right: -12%; */
+    top: 6%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+
+  .logo-col {
+    grid-row: 3;
+    grid-column: 1 / spans 3;
+  }
+
+  .address-col {
+    grid-row: 2;
+    grid-column: 1 / spans 3;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2rem;
+  }
+
+  .product,
+  .product.reversed {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .product .image-container {
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product .image-container img {
+    height: 100%;
+    width: 80%;
+  }
+
+  .product .product-details h1,
+  .product .product-details .product-size {
+    text-align: center;
+  }
+
+  .product .product-benefits .product-benefits-list-item {
+    margin: 0;
+    gap: 1rem;
+  }
+}
+
+/************************************************/
+/*    Fixing flexbox gap for Safari browser     */
+/************************************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 63em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
